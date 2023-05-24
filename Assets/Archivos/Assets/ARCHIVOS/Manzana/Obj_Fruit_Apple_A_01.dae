@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Centrixe</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.6;  Revision: 68</authoring_tool>
+    </contributor>
+    <created>2020-02-03T16:29:12</created>
+    <modified>2020-02-03T16:29:12</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Mt_Plant_FruitApple_A">
+      <profile_COMMON>
+        <newparam sid="Plant_Fruit_Apple_A_Alb_png-surface">
+          <surface type="2D">
+            <init_from>Plant_Fruit_Apple_A_Alb_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Plant_Fruit_Apple_A_Alb_png-sampler">
+          <sampler2D>
+            <source>Plant_Fruit_Apple_A_Alb_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Plant_Fruit_Apple_A_Nrm_png-surface">
+          <surface type="2D">
+            <init_from>Plant_Fruit_Apple_A_Nrm_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Plant_Fruit_Apple_A_Nrm_png-sampler">
+          <sampler2D>
+            <source>Plant_Fruit_Apple_A_Nrm_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Plant_Fruit_Apple_A_Alb_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Plant_Fruit_Apple_A_Alb_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Plant_Fruit_Apple_A_Nrm_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Mt_Plant_FruitApple_A-material" name="Mt_Plant_FruitApple_A">
+      <instance_effect url="#Mt_Plant_FruitApple_A"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-pSphere2__Mt_Plant_FruitApple_A" name="pSphere2__Mt_Plant_FruitApple_A">
+      <mesh>
+        <source id="geom-pSphere2__Mt_Plant_FruitApple_A-positions">
+          <float_array id="geom-pSphere2__Mt_Plant_FruitApple_A-positions-array" count="228">-0.0079422 -0.02555847 0.196167 0.005386353 -0.01617432 0.1949463 -0.01052856 -0.009864807 0.1948242 -0.01052856 -0.009864807 0.1948242 -0.001246452 -0.01483917 0.1485596 -0.0079422 -0.02555847 0.196167 -0.002410889 -0.003152847 0.1486816 -0.00320816 -0.007217407 0.08782959 0.005386353 -0.01617432 0.1949463 -0.003883362 0.006645203 0.08795166 -0.001246452 -0.01483917 0.1485596 -0.0079422 -0.02555847 0.196167 0.009475708 -0.006771088 0.1489258 0.01031494 0.003288269 0.08459473 -0.00320816 -0.007217407 0.08782959 0 0 0.09039307 0.08221436 0 0.1148682 0.05813599 0.05819702 0.1148682 0.0869751 0.0869751 0.09277344 0.1229858 0 0.09277344 0.09381104 0.09381104 0.02941895 0 0 0.09039307 0.05813599 -0.0581665 0.1148682 0.1325684 0 0.02941895 0.08343506 0.08343506 -0.04162598 0.0869751 -0.0869751 0.09277344 0 0 0.09039307 0 -0.08227539 0.1148682 0.117981 0 -0.04162598 0.04714966 0.04718018 -0.1116333 0.09381104 -0.09381104 0.02941895 0.06665039 0 -0.1116333 0 0 -0.1217041 0 -0.1229858 0.09277344 0.08343506 -0.08343506 -0.04162598 0 0 0.09039307 -0.05819702 -0.0581665 0.1148682 0.04714966 -0.04714966 -0.1116333 0 0 -0.1217041 0 0 0.09039307 -0.08227539 0 0.1148682 0 -0.118042 -0.04162598 -0.08703613 -0.0869751 0.09277344 0 -0.06665039 -0.1116333 0 0 -0.1217041 0 -0.1326904 0.02941895 -0.09387207 -0.09381104 0.02941895 -0.1230469 0 0.09277344 0 0 0.09039307 -0.05819702 0.05819702 0.1148682 -0.08349609 -0.08343506 -0.04162598 -0.1326904 0 0.02941895 -0.04718018 -0.04714966 -0.1116333 0 0 -0.1217041 -0.08703613 0.0869751 0.09277344 -0.118042 0 -0.04162598 0 0 0.09039307 0 0.08227539 0.1148682 -0.06671143 0 -0.1116333 0 0 -0.1217041 0 0 0.09039307 0.05813599 0.05819702 0.1148682 0 0.1230469 0.09277344 0.0869751 0.0869751 0.09277344 -0.09387207 0.09381104 0.02941895 0 0.1326904 0.02941895 0.09381104 0.09381104 0.02941895 -0.08349609 0.08343506 -0.04162598 0 0.118042 -0.04162598 0.08343506 0.08343506 -0.04162598 -0.04718018 0.04718018 -0.1116333 0 0 -0.1217041 0 0.06671143 -0.1116333 0 0 -0.1217041 0.04714966 0.04718018 -0.1116333 0 0 -0.1217041</float_array>
+          <technique_common>
+            <accessor source="#geom-pSphere2__Mt_Plant_FruitApple_A-positions-array" count="76" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-pSphere2__Mt_Plant_FruitApple_A-normals">
+          <float_array id="geom-pSphere2__Mt_Plant_FruitApple_A-normals-array" count="228">-0.3560138 -0.9252445 -0.1310602 0.9832389 -0.007835031 0.1821533 -0.7020271 0.7039819 0.1075522 -0.7020271 0.703982 0.1075522 -0.2544829 -0.9474601 -0.1937985 -0.3560138 -0.9252445 -0.1310602 -0.5592167 0.8212279 0.1134082 -0.1879317 -0.9748958 -0.1194149 0.983239 -0.007835031 0.1821533 -0.4579211 0.8747472 0.1585111 -0.2544829 -0.9474601 -0.1937985 -0.3560138 -0.9252445 -0.1310602 0.9940303 0.09196699 0.05870313 0.9901394 0.1369759 0.02935231 -0.1879317 -0.9748958 -0.1194149 0 0 1 0.2521827 0 0.9676797 0.1779234 0.1779234 0.9678257 0.6453479 0.6453479 0.4087203 0.9124337 0 0.4092246 0.706715 0.706715 -0.03328099 0 0 1 0.1779235 -0.1779243 0.9678255 0.9994472 0 -0.03324969 0.6558163 0.6558155 -0.3739133 0.6453479 -0.6453479 0.4087203 0 0 1 0 -0.2521827 0.9676797 0.927529 0 -0.3737514 0.5181615 0.5181611 -0.6804542 0.7067155 -0.7067147 -0.03328027 0.7330024 0 -0.6802261 0 0 -1 0 -0.9124337 0.4092246 0.655816 -0.655816 -0.3739128 0 0 1 -0.1779235 -0.1779243 0.9678255 0.5181614 -0.5181611 -0.6804541 0 0 -1 0 0 1 -0.2521827 0 0.9676797 0 -0.9275292 -0.3737511 -0.6453479 -0.6453479 0.4087203 0 -0.7330019 -0.6802265 0 0 -1 0 -0.9994472 -0.03324969 -0.7067155 -0.7067147 -0.03328027 -0.9124337 0 0.4092246 0 0 1 -0.1779234 0.1779234 0.9678257 -0.655816 -0.655816 -0.3739128 -0.9994472 0 -0.03324969 -0.5181614 -0.5181611 -0.6804541 0 0 -1 -0.6453479 0.6453479 0.4087203 -0.927529 0 -0.3737514 0 0 1 0 0.2521827 0.9676797 -0.7330024 0 -0.6802261 0 0 -1 0 0 1 0.1779234 0.1779234 0.9678257 0 0.9124337 0.4092246 0.6453479 0.6453479 0.4087203 -0.706715 0.706715 -0.03328099 0 0.999447 -0.03325044 0.706715 0.706715 -0.03328099 -0.6558163 0.6558155 -0.3739132 0 0.9275292 -0.3737511 0.6558163 0.6558155 -0.3739133 -0.5181614 0.5181611 -0.6804541 0 0 -1 0 0.7330027 -0.6802258 0 0 -1 0.5181615 0.5181611 -0.6804541 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-pSphere2__Mt_Plant_FruitApple_A-normals-array" count="76" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-pSphere2__Mt_Plant_FruitApple_A-map-2">
+          <float_array id="geom-pSphere2__Mt_Plant_FruitApple_A-map-2-array" count="228">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-pSphere2__Mt_Plant_FruitApple_A-map-2-array" count="76" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-pSphere2__Mt_Plant_FruitApple_A-map0">
+          <float_array id="geom-pSphere2__Mt_Plant_FruitApple_A-map0-array" count="228">0.5254902 0.5254902 0.5254902 0.4941177 0.4941177 0.4941177 0.4784314 0.4784314 0.4784314 0.4784314 0.4784314 0.4784314 0.572549 0.572549 0.572549 0.5254902 0.5254902 0.5254902 0.509804 0.509804 0.509804 0.4862745 0.4862745 0.4862745 0.4941177 0.4941177 0.4941177 0.4941177 0.4941177 0.4941177 0.572549 0.572549 0.572549 0.5254902 0.5254902 0.5254902 0.4941177 0.4941177 0.4941177 0.4941177 0.4941177 0.4941177 0.4862745 0.4862745 0.4862745 0.1803922 0.1803922 0.1803922 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.1803922 0.1803922 0.1803922 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.1803922 0.1803922 0.1803922 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.1803922 0.1803922 0.1803922 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.1803922 0.1803922 0.1803922 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.1803922 0.1803922 0.1803922 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.1803922 0.1803922 0.1803922 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.1803922 0.1803922 0.1803922 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785 0.9960785</float_array>
+          <technique_common>
+            <accessor source="#geom-pSphere2__Mt_Plant_FruitApple_A-map0-array" count="76" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-pSphere2__Mt_Plant_FruitApple_A-map1">
+          <float_array id="geom-pSphere2__Mt_Plant_FruitApple_A-map1-array" count="228">0.05429077 2.96875 0 0.05429077 2.978516 0 0.05429077 2.983398 0 0.05429077 2.983398 0 0.2381592 2.987305 0 0.05429077 2.987305 0 0.2381592 2.983398 0 0.453125 2.987305 0 0.05429077 2.978516 0 0.453125 2.983398 0 0.2381592 2.96875 0 0.05429077 2.96875 0 0.2381592 2.978516 0 0.453125 2.978516 0 0.453125 2.96875 0 1 1 0 0.875 0.8000488 0 1 0.8000488 0 1 0.6000977 0 0.875 0.6000977 0 1 0.5058594 0 0.8125 1 0 0.75 0.8000488 0 0.875 0.5058594 0 1 0.4003906 0 0.75 0.6000977 0 0.6875 1 0 0.625 0.8000488 0 0.875 0.4003906 0 1 0.1777344 0 0.75 0.5058594 0 0.875 0.1777344 0 1 0 0 0.625 0.6000977 0 0.75 0.4003906 0 0.5625 1 0 0.5 0.8000488 0 0.75 0.1777344 0 0.8125 0 0 0.4375 1 0 0.375 0.8000488 0 0.625 0.4003906 0 0.5 0.6000977 0 0.625 0.1777344 0 0.6875 0 0 0.625 0.5058594 0 0.5 0.5058594 0 0.375 0.6000977 0 0.3125 1 0 0.25 0.8000488 0 0.5 0.4003906 0 0.375 0.5058594 0 0.5 0.1777344 0 0.5625 0 0 0.25 0.6000977 0 0.375 0.4003906 0 0.1875 1 0 0.125 0.8000488 0 0.375 0.1777344 0 0.4375 0 0 0 1 0 0 0.8000488 0 0.125 0.6000977 0 0 0.6000977 0 0.25 0.5058594 0 0.125 0.5058594 0 0 0.5058594 0 0.25 0.4003906 0 0.125 0.4003906 0 0 0.4003906 0 0.25 0.1777344 0 0.3125 0 0 0.125 0.1777344 0 0.1875 0 0 0 0.1777344 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-pSphere2__Mt_Plant_FruitApple_A-map1-array" count="76" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-pSphere2__Mt_Plant_FruitApple_A-vertices">
+          <input semantic="POSITION" source="#geom-pSphere2__Mt_Plant_FruitApple_A-positions"/>
+        </vertices>
+        <triangles material="Mt_Plant_FruitApple_A" count="93">
+          <input semantic="VERTEX" source="#geom-pSphere2__Mt_Plant_FruitApple_A-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-pSphere2__Mt_Plant_FruitApple_A-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-pSphere2__Mt_Plant_FruitApple_A-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-pSphere2__Mt_Plant_FruitApple_A-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 3 3 3 3 4 4 4 4 5 5 5 5 6 6 6 6 4 4 4 4 3 3 3 3 6 6 6 6 7 7 7 7 4 4 4 4 8 8 8 8 6 6 6 6 3 3 3 3 9 9 9 9 7 7 7 7 6 6 6 6 10 10 10 10 8 8 8 8 11 11 11 11 12 12 12 12 9 9 9 9 6 6 6 6 12 12 12 12 6 6 6 6 8 8 8 8 10 10 10 10 12 12 12 12 8 8 8 8 13 13 13 13 9 9 9 9 12 12 12 12 14 14 14 14 12 12 12 12 10 10 10 10 14 14 14 14 13 13 13 13 12 12 12 12 15 15 15 15 16 16 16 16 17 17 17 17 16 16 16 16 18 18 18 18 17 17 17 17 16 16 16 16 19 19 19 19 18 18 18 18 19 19 19 19 20 20 20 20 18 18 18 18 16 16 16 16 21 21 21 21 22 22 22 22 16 16 16 16 22 22 22 22 19 19 19 19 19 19 19 19 23 23 23 23 20 20 20 20 23 23 23 23 24 24 24 24 20 20 20 20 22 22 22 22 25 25 25 25 19 19 19 19 19 19 19 19 25 25 25 25 23 23 23 23 22 22 22 22 26 26 26 26 27 27 27 27 22 22 22 22 27 27 27 27 25 25 25 25 23 23 23 23 28 28 28 28 24 24 24 24 28 28 28 28 29 29 29 29 24 24 24 24 25 25 25 25 30 30 30 30 23 23 23 23 23 23 23 23 30 30 30 30 28 28 28 28 31 31 31 31 32 32 32 32 29 29 29 29 28 28 28 28 31 31 31 31 29 29 29 29 25 25 25 25 33 33 33 33 30 30 30 30 27 27 27 27 33 33 33 33 25 25 25 25 30 30 30 30 34 34 34 34 28 28 28 28 28 28 28 28 34 34 34 34 31 31 31 31 27 27 27 27 35 35 35 35 36 36 36 36 27 27 27 27 36 36 36 36 33 33 33 33 31 31 31 31 37 37 37 37 38 38 38 38 34 34 34 34 37 37 37 37 31 31 31 31 36 36 36 36 39 39 39 39 40 40 40 40 34 34 34 34 41 41 41 41 37 37 37 37 36 36 36 36 40 40 40 40 42 42 42 42 36 36 36 36 42 42 42 42 33 33 33 33 37 37 37 37 43 43 43 43 44 44 44 44 41 41 41 41 43 43 43 43 37 37 37 37 33 33 33 33 42 42 42 42 45 45 45 45 33 33 33 33 45 45 45 45 30 30 30 30 30 30 30 30 45 45 45 45 34 34 34 34 45 45 45 45 41 41 41 41 34 34 34 34 42 42 42 42 46 46 46 46 45 45 45 45 45 45 45 45 46 46 46 46 41 41 41 41 40 40 40 40 47 47 47 47 42 42 42 42 42 42 42 42 47 47 47 47 46 46 46 46 40 40 40 40 48 48 48 48 49 49 49 49 40 40 40 40 49 49 49 49 47 47 47 47 46 46 46 46 50 50 50 50 41 41 41 41 41 41 41 41 50 50 50 50 43 43 43 43 47 47 47 47 51 51 51 51 46 46 46 46 46 46 46 46 51 51 51 51 50 50 50 50 43 43 43 43 52 52 52 52 53 53 53 53 50 50 50 50 52 52 52 52 43 43 43 43 47 47 47 47 54 54 54 54 51 51 51 51 49 49 49 49 54 54 54 54 47 47 47 47 51 51 51 51 55 55 55 55 50 50 50 50 50 50 50 50 55 55 55 55 52 52 52 52 49 49 49 49 56 56 56 56 57 57 57 57 49 49 49 49 57 57 57 57 54 54 54 54 52 52 52 52 58 58 58 58 59 59 59 59 55 55 55 55 58 58 58 58 52 52 52 52 57 57 57 57 60 60 60 60 61 61 61 61 57 57 57 57 61 61 61 61 62 62 62 62 57 57 57 57 62 62 62 62 54 54 54 54 61 61 61 61 63 63 63 63 62 62 62 62 54 54 54 54 64 64 64 64 51 51 51 51 54 54 54 54 62 62 62 62 64 64 64 64 51 51 51 51 64 64 64 64 55 55 55 55 62 62 62 62 63 63 63 63 65 65 65 65 62 62 62 62 65 65 65 65 64 64 64 64 63 63 63 63 66 66 66 66 65 65 65 65 64 64 64 64 67 67 67 67 55 55 55 55 64 64 64 64 65 65 65 65 67 67 67 67 55 55 55 55 67 67 67 67 58 58 58 58 65 65 65 65 66 66 66 66 68 68 68 68 65 65 65 65 68 68 68 68 67 67 67 67 66 66 66 66 69 69 69 69 68 68 68 68 67 67 67 67 70 70 70 70 58 58 58 58 67 67 67 67 68 68 68 68 70 70 70 70 58 58 58 58 70 70 70 70 71 71 71 71 68 68 68 68 69 69 69 69 72 72 72 72 68 68 68 68 72 72 72 72 70 70 70 70 70 70 70 70 72 72 72 72 73 73 73 73 69 69 69 69 74 74 74 74 72 72 72 72 72 72 72 72 74 74 74 74 75 75 75 75</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="geom-pSphere2__Mt_Plant_FruitApple_A-skin1">
+      <skin source="#geom-pSphere2__Mt_Plant_FruitApple_A">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-pSphere2__Mt_Plant_FruitApple_A-skin1-joints">
+          <Name_array id="geom-pSphere2__Mt_Plant_FruitApple_A-skin1-joints-array" count="1">joint0</Name_array>
+          <technique_common>
+            <accessor source="#geom-pSphere2__Mt_Plant_FruitApple_A-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-pSphere2__Mt_Plant_FruitApple_A-skin1-bind_poses">
+          <float_array id="geom-pSphere2__Mt_Plant_FruitApple_A-skin1-bind_poses-array" count="16">1 0 0 0 0 0 1 0 0 -1 0 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-pSphere2__Mt_Plant_FruitApple_A-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-pSphere2__Mt_Plant_FruitApple_A-skin1-weights">
+          <float_array id="geom-pSphere2__Mt_Plant_FruitApple_A-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-pSphere2__Mt_Plant_FruitApple_A-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-pSphere2__Mt_Plant_FruitApple_A-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-pSphere2__Mt_Plant_FruitApple_A-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="76">
+          <input semantic="JOINT" source="#geom-pSphere2__Mt_Plant_FruitApple_A-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-pSphere2__Mt_Plant_FruitApple_A-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="Plant_Fruit_Apple_A_Alb_png">
+      <init_from>./images/Plant_Fruit_Apple_A_Alb.png</init_from>
+    </image>
+    <image id="Plant_Fruit_Apple_A_Nrm_png">
+      <init_from>./images/Plant_Fruit_Apple_A_Nrm.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Root" name="Root" sid="joint0" type="JOINT">
+        <rotate>-1 0 0 -90</rotate>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-pSphere2__Mt_Plant_FruitApple_A" name="pSphere2__Mt_Plant_FruitApple_A">
+        <instance_controller url="#geom-pSphere2__Mt_Plant_FruitApple_A-skin1">
+          <skeleton>#node-Root</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_Plant_FruitApple_A" target="#Mt_Plant_FruitApple_A-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
